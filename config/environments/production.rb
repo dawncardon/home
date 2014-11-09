@@ -26,6 +26,10 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
+ # Required for Heroku
+  config.action_mailer.default_url_options = { :host => 'dawncardon.com' }
+
+
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
